@@ -10,6 +10,7 @@ namespace Person_Data_Management
             List<Person> objListOfPersonsInCity = new List<Person>();
             Repository objRep = new Repository();
             objRep.AddRecords(objListOfPersonsInCity);
+            objRep.Retrieving_TopTwoRecords_ForAgeLessThanSixty(objListOfPersonsInCity);
         }
     }
 }
