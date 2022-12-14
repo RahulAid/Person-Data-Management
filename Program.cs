@@ -11,6 +11,7 @@ namespace Person_Data_Management
             Repository objRep = new Repository();
             objRep.AddRecords(objListOfPersonsInCity);
             objRep.Retrieving_TopTwoRecords_ForAgeLessThanSixty(objListOfPersonsInCity);
+            objRep.Retrieving_Records_ForAgeBetween13to18(objListOfPersonsInCity);
         }
     }
 }

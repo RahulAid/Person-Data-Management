@@ -25,5 +25,17 @@ namespace Person_Data_Management
                 Console.WriteLine($"\nName: {person.Name} \nAge: {person.Age}");
             }
         }
+
+        public void Retrieving_Records_ForAgeBetween13to18(List<Person> objListOfPersonsInCity)
+        {
+            if (objListOfPersonsInCity.Any(e => (e.Age >= 13 && e.Age < 19)))
+            {
+                Console.WriteLine("\nYes, we have some teenagers in this list");
+            }
+            else
+            {
+                Console.WriteLine("\nNo, we do not have any teenagers in this list");
+            }
+        }
     }
 }
